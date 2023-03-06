@@ -1,5 +1,13 @@
 This is a [Next.js](https://nextjs.org/) template to use when reporting a [bug in the Next.js repository](https://github.com/vercel/next.js/issues).
 
+## How to repro
+
+- Run dev server: `next dev`
+- Open http://localhost:3000/blog/random
+- Page will return 404 even though it should've been handled by `app/blog/[slug]/page.tsx`
+- Disable i18n config, restart dev server and reopen the page
+- It works fine
+
 ## Getting Started
 
 These are the steps you should follow when creating a bug report:
